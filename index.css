@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+.svg {
+    transition: all 0.3s;
+    background-color: #252525;
+    padding: 20px;
+    box-shadow: 20px 20px 53px #171717,
+        -20px -20px 53px #333333;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.svg:hover {
+    transform: translateY(-20px);
+}
+
+.svg1:hover svg {
+    fill: #1877F2;
+}
+
+.svg2:hover svg {
+    fill: #E4405F;
+}
+
+.svg3:hover svg {
+    fill: #25D366;
+}
+
+.svg4:hover svg {
+    fill: #1DA1F2;
+}
+
+.svg5:hover svg {
+    fill: #BD081C;
+}
+
+h1 {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 27px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all 0.3s;
+    text-transform: lowercase;
+}
+
+.h1 {
+    bottom: -100px;
+    left: -16px;
+}
+
+.h2 {
+    bottom: -100px;
+    left: -12px;
+}
+
+.h3 {
+    bottom: -100px;
+    left: -16px;
+}
+
+.h4 {
+    bottom: -100px;
+    left: 2px;
+}
+
+.h5 {
+    bottom: -100px;
+    left: -4px;
+}
+
+.show {
+    opacity: 1;
+    /* display: block; */
+}
